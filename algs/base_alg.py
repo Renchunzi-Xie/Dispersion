@@ -7,14 +7,8 @@ class Base_alg:
         super(Base_alg, self).__init__()
         # load the pre-trained model.
         self.get_path(args)
-        # self.save_dir_path = './checkpoints/{}'.format(args['dataname'] + '_' + args['arch'])
-        if ('imagenet' in args['dataname']) & (args['num_classes'] == 1000):
-            self.base_model = get_imagenet_model(args['arch'], args['num_classes'], args['seed']).to(device)
-        elif args['arch'] == 'clip':
-            self.base_model = get_model(args['arch'], args['num_classes'], device)
-        else:
-            self.base_model = get_model(args['arch'], args['num_classes'], args['seed']).to(device)
-            self.base_model.load_state_dict(torch.load('{}/base_model.pt'.format(self.save_dir_path)))
+        self.base_model = get_model(args['arch'], args['num_classes'], args['seed']).to(device)
+        self.base_model.load_state_dict(torch.load('{}/base_model.pt'.format(self.save_dir_path)))
 
         self.val_loader = val_loader
         self.device = device
