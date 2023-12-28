@@ -10,4 +10,3 @@ do
   python main.py --alg dispersion --arch ${arch} --severity ${severity} --dataname tinyimagenet --lr 0.001 --batch_size 128 --seed 1 --gpu ${gpu} --cifar_data_path ../datasets/Tiny-ImageNet/tiny-imagenet-200 --cifar_corruption_path ../datasets/Tiny-ImageNet/Tiny-ImageNet-C --score dispersion
 done
 
-  python main.py --alg dispersion --arch resnet18 --severity -1 --dataname cifar10 --lr 0.001 --batch_size 128 --seed 1 --gpu 1 --cifar_data_path /data/home/czxie/datasets/Cifar10 --cifar_corruption_path /data/home/czxie/datasets/Cifar10/CIFAR-10-C --score dispersion
