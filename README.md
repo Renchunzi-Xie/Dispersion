@@ -7,22 +7,28 @@ This repository is the official implementation of "[On the Importance of Feature
 
 2. Download TinyImageNet
 
-`wget http://cs231n.stanford.edu/tiny-imagenet-200.zip`
-`unzip tiny-imagenet-200.zip`
-`rm tiny-imagenet-200.zip`
+```
+wget http://cs231n.stanford.edu/tiny-imagenet-200.zip
+unzip tiny-imagenet-200.zip
+rm tiny-imagenet-200.zip
+```
 
 ### Evaluation process
 1. Download CIFAR-10C
 
-`mkdir -p ./data/cifar`
-`curl -O https://zenodo.org/record/2535967/files/CIFAR-10-C.tar`
-`tar -xvf CIFAR-10-C.tar -C data/cifar10/`
+```
+mkdir -p ./data/cifar
+curl -O https://zenodo.org/record/2535967/files/CIFAR-10-C.tar
+tar -xvf CIFAR-10-C.tar -C data/cifar10/
+```
 
 2. Download CIFAR-100C
 
-`mkdir -p ./data/cifar`
-`curl -O https://zenodo.org/record/3555552/files/CIFAR-100-C.tar`
-`tar -xvf CIFAR-100-C.tar -C data/cifar100/`
+```
+mkdir -p ./data/cifar
+curl -O https://zenodo.org/record/3555552/files/CIFAR-100-C.tar
+tar -xvf CIFAR-100-C.tar -C data/cifar100/
+```
 
 3. Download TinyImageNet-C
 
