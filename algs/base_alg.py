@@ -1,5 +1,5 @@
 import torch
-from models.utils import get_model, get_imagenet_model
+from models.utils import get_model
 
 
 class Base_alg:
