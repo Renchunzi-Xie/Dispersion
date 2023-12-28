@@ -87,8 +87,6 @@ if __name__ == "__main__":
                 time_list.append(float(end_time - start_time))
                 test_acc_list.append(float(test_acc))
                 print('corruption:{}, severity:{}, score:{}, test acc:{}'.format(args['corruption'], args['severity'], scores, test_acc))
-                ece = alg_obj.expected_calibration_error()
-                print("ece:{}".format(ece))
         mean_score = np.mean(scores_list)
         mean_time = np.mean(time_list)
         print('Mean scores:{}, time:{}'.format(mean_score, mean_time))
