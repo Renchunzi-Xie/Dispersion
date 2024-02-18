@@ -8,9 +8,6 @@ score_dict = {
 }
 
 class Dispersion(Base_alg):
-    """
-    Calinski-Harabaz Index
-    """
     def __init__(self,val_loader, device, args):
         super(Dispersion, self).__init__(val_loader, device, args)
         # load the pre-trained model.
